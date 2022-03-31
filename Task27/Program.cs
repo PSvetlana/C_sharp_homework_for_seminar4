@@ -3,7 +3,7 @@
 82 -> 10
 9012 -> 12 */
 
-int sumOfNumbers(int num) //отвечает за подсчет суммы цифр в числе
+int SumOfNumbers(int num) //отвечает за подсчет суммы цифр в числе
 {
     int result = 0;
     while (num > 0)
@@ -16,5 +16,5 @@ int sumOfNumbers(int num) //отвечает за подсчет суммы ци
 
 Console.Write("Введите число: ");
 int userNumber = Convert.ToInt32(Console.ReadLine());
-int sum = sumOfNumbers(userNumber);
+int sum = SumOfNumbers(userNumber);
 Console.Write($"Сумма цифр в числе {userNumber} равна {sum}");

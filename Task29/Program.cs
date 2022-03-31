@@ -2,7 +2,7 @@
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33] */
 
-void printArray(int[] arrayToPrint) //выводит массив в определенном формате: "[1, 2, ..., n]"
+void PrintArray(int[] arrayToPrint) //выводит массив в определенном формате: "[1, 2, ..., n]"
 {
     Console.Write("[");
     for (int i = 0; i < arrayToPrint.Length; i++)
@@ -16,7 +16,7 @@ void printArray(int[] arrayToPrint) //выводит массив в опред�
     Console.Write("]");
 }
 
-int[] createRandomArray(int length) //создает массив из рандомных элементов в диапазоне от [-100; 100]
+int[] CreateRandomArray(int length) //создает массив из рандомных элементов в диапазоне от [-100; 100]
 {
     int[] returningArray = new int[length];
     for (int i = 0; i < length; i++)
@@ -28,5 +28,5 @@ int[] createRandomArray(int length) //создает массив из ранд�
 
 Console.Write("Введите число элементов массива: ");
 int numberOfItems = Convert.ToInt32(Console.ReadLine());
-int[] arrayRandom = createRandomArray(numberOfItems);
-printArray(arrayRandom);
+int[] arrayRandom = CreateRandomArray(numberOfItems);
+PrintArray(arrayRandom);
